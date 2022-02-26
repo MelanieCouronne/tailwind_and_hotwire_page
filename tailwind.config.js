@@ -1,5 +1,5 @@
-const colors = require('../app/javascript/config/colors.js')
-const fontFamily = require('../app/javascript/config/fontFamily.js')
+const colors = require('./app/javascript/config/colors.js')
+const fontFamily = require('./app/javascript/config/fontFamily.js')
 
 module.exports = {
   content: [
@@ -22,8 +22,5 @@ module.exports = {
     }
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
   ]
 }

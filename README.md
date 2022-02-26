@@ -82,11 +82,26 @@ Here is an example of how it should look.
 The design of the card is also available in this [Figma](https://www.figma.com/file/vsgnaKqwrg7KK5OZGbgLcl/Untitled?node-id=0%3A1) 
 
 **Tips for the image:** 
+
 There is a basic Cloudinary configuration already available in this project, you can use the cloudinary helper with the cloudinary key given in the csv file to generate the Image tag
 
 ```ruby
 <%= cl_image_tag("production/stories/alice-au-pays-des-merveilles/as_cover/r6v62fvq8bokh6ivb358hia4bsbf") %>
 ```
+
+**Tips for Tailwind colors:** 
+
+Plume color palette is defined in this configuration file `./app/javascript/config/colors.js` and imported in the Tailwind config file. It overrides the default Tailwind color Palette. 
+
+Here are a few examples you can use : 
+
+```
+bg-blue-lighter
+bg-blue-light
+text-gray-light
+fill-blue
+```
+
 
 ### Task 4
 
