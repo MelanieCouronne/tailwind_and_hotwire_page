@@ -9,10 +9,10 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body class="bg-[#f5f8fd]>
+  <body class= "bg-[#f5f8fd]">
     <%= turbo_frame_tag "modal" %>
-    <%= render 'shared/navbar' %>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <%= render "shared/navbar" %>
+    <main class= "container w-100 mx-auto mt-20 px-5 flex">
       <%= yield %>
     </main>
   </body>
