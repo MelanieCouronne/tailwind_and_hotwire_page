@@ -74,3 +74,5 @@ group :test do
 end
 
 gem "cloudinary", "~> 1.22"
+
+gem "view_component", "~> 2.49"
