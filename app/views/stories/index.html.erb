@@ -6,7 +6,7 @@
       <span class="inline-flex items-center justify-center ml-2 px-2 text-xs font-bold leading-none bg-[#f5d944] rounded">Recommandé</span>
     </div>
       <div class="flex swiper-wrapper">
-        <% @selectedLaForetEnchantee.first(4).each do |story| %>
+        <% @selected_la_foret_enchantee.first(4).each do |story| %>
           <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
             <%= render 'card', story: story %>
           <% end %>
@@ -18,7 +18,7 @@
   <div data-controller="carousel" class="mb-8">
     <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "La chaumière perdue"</h2>
       <div class="flex swiper-wrapper">
-        <% @selectedLaChaumièrePerdue.first(4).each do |story| %>
+        <% @selected_la_chaumière_perdue.first(4).each do |story| %>
           <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
             <%= render 'card', story: story %>
           <% end %>
@@ -30,7 +30,7 @@
   <div data-controller="carousel" class="mb-8">
     <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "L'île mystérieuse"</h2>
       <div class="flex swiper-wrapper">
-        <% @selectedIleMysterieuse.first(4).each do |story| %>
+        <% @selected_ile_mysterieuse.first(4).each do |story| %>
           <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
             <%= render 'card', story: story %>
           <% end %>
@@ -42,7 +42,7 @@
   <div data-controller="carousel" class="mb-8">
     <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "Le palais merveilleux"</h2>
       <div class="flex swiper-wrapper">
-        <% @selectedLePalaisMerveilleux.first(4).each do |story| %>
+        <% @selected_le_palais_merveilleux.first(4).each do |story| %>
           <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
             <%= render 'card', story: story %>
           <% end %>
@@ -54,7 +54,7 @@
   <div data-controller="carousel" class="mb-8">
     <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "Le désert des mirages"</h2>
       <div class="flex swiper-wrapper">
-        <% @selectedLeDesertDesMirages.first(4).each do |story| %>
+        <% @selected_le_desert_des_mirages.first(4).each do |story| %>
           <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
             <%= render 'card', story: story %>
           <% end %>

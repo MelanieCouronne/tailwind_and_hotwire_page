@@ -1,7 +1,7 @@
 class StoriesController < ApplicationController
   def index
     @stories = Story.order(:universe_name)
-    select_by_universe
+    display_univers
   end
 
   def preview
@@ -10,11 +10,11 @@ class StoriesController < ApplicationController
 
   private
 
-  def select_by_universe
-    @selectedLaForetEnchantee = @stories.select { |story| story.universe_name == "La forêt enchantée" }
-    @selectedLaChaumièrePerdue = @stories.select { |story| story.universe_name == "La chaumière perdue" }
-    @selectedIleMysterieuse = @stories.select { |story| story.universe_name == "L'île mystérieuse" }
-    @selectedLePalaisMerveilleux = @stories.select { |story| story.universe_name == "Le palais merveilleux" }
-    @selectedLeDesertDesMirages = @stories.select { |story| story.universe_name == "Le désert des mirages" }
+  def display_univers
+    @selected_la_foret_enchantee = @stories.select { |story| story.universe_name == 'La forêt enchantée' }
+    @selected_la_chaumière_perdue = @stories.select { |story| story.universe_name == 'La chaumière perdue' }
+    @selected_ile_mysterieuse = @stories.select { |story| story.universe_name == 'La chaumière perdue' }
+    @selected_le_palais_merveilleux = @stories.select { |story| story.universe_name == 'La chaumière perdue' }
+    @selected_le_desert_des_mirages = @stories.select { |story| story.universe_name == 'Le désert des mirages' }
   end
 end
