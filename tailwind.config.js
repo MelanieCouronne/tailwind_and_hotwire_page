@@ -14,6 +14,11 @@ module.exports = {
     fontFamily: {
       ...fontFamily
     },
+    lineClamp: {
+      1: 1,
+      2: 2,
+      3: 3
+    },
     screens: {
       sm: '576px', // breakpoints inspired by the current BS settings
       md: '768px',
