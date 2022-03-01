@@ -77,3 +77,5 @@ end
 gem "cloudinary", "~> 1.22"
 
 gem "view_component", "~> 2.49"
+
+gem "tailwindcss-rails", "~> 2.0"
