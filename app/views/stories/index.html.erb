@@ -1,0 +1,64 @@
+<div class="w-full">
+  <%# Univers "La forêt enchantée" %>
+  <div data-controller="carousel" class="mb-8">
+    <div class="flex">
+      <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "La forêt enchantée"</h2>
+      <span class="inline-flex items-center justify-center ml-2 px-2 text-xs font-bold leading-none bg-[#f5d944] rounded">Recommandé</span>
+    </div>
+      <div class="flex swiper-wrapper">
+        <% @selectedLaForetEnchantee.first(4).each do |story| %>
+          <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
+            <%= render 'card', story: story %>
+          <% end %>
+        <% end %>
+      </div>
+  </div>
+
+  <%# Univers La chaumière perdue %>
+  <div data-controller="carousel" class="mb-8">
+    <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "La chaumière perdue"</h2>
+      <div class="flex swiper-wrapper">
+        <% @selectedLaChaumièrePerdue.first(4).each do |story| %>
+          <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
+            <%= render 'card', story: story %>
+          <% end %>
+        <% end %>
+      </div>
+  </div>
+
+  <%# Univers L'île mystérieuse %>
+  <div data-controller="carousel" class="mb-8">
+    <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "L'île mystérieuse"</h2>
+      <div class="flex swiper-wrapper">
+        <% @selectedIleMysterieuse.first(4).each do |story| %>
+          <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
+            <%= render 'card', story: story %>
+          <% end %>
+        <% end %>
+      </div>
+  </div>
+
+  <%# Univers Le palais merveilleux %>
+  <div data-controller="carousel" class="mb-8">
+    <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "Le palais merveilleux"</h2>
+      <div class="flex swiper-wrapper">
+        <% @selectedLePalaisMerveilleux.first(4).each do |story| %>
+          <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
+            <%= render 'card', story: story %>
+          <% end %>
+        <% end %>
+      </div>
+  </div>
+
+  <%# Univers Le désert des mirages %>
+  <div data-controller="carousel" class="mb-8">
+    <h2 class="font-semibold text-[#333333] ml-2">Dans l'univers "Le désert des mirages"</h2>
+      <div class="flex swiper-wrapper">
+        <% @selectedLeDesertDesMirages.first(4).each do |story| %>
+          <%= link_to  preview_story_path(story), data: { turbo_frame: 'modal' } do %>
+            <%= render 'card', story: story %>
+          <% end %>
+        <% end %>
+      </div>
+  </div>
+</div>
