@@ -1,5 +1,5 @@
-const colors = require('./app/javascript/config/colors.js')
-const fontFamily = require('./app/javascript/config/fontFamily.js')
+const colors = require('../app/javascript/config/colors.js')
+const fontFamily = require('../app/javascript/config/fontFamily.js')
 
 module.exports = {
   content: [
@@ -13,11 +13,6 @@ module.exports = {
     },
     fontFamily: {
       ...fontFamily
-    },
-    lineClamp: {
-      1: 1,
-      2: 2,
-      3: 3
     },
     screens: {
       sm: '576px', // breakpoints inspired by the current BS settings
