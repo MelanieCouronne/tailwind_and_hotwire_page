@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  universe_max_age: 1
+  universe_min_age: 1
+  universe_name: MyString
+  description: MyText
+  title: MyString
+  cloudinary_key: MyString
+
+two:
+  universe_max_age: 1
+  universe_min_age: 1
+  universe_name: MyString
+  description: MyText
+  title: MyString
+  cloudinary_key: MyString
