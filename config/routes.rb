@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :stories, only: [:index] do
     member do
-      get 'preview'
+      get :preview
     end
   end
 end
