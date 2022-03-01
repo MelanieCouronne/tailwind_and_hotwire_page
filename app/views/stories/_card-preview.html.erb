@@ -1,0 +1,27 @@
+<div class="flex justify-center items-center z-999 w-screen h-screen fixed bg-[#767a7f]/40">
+  <div class="w-[700px] h-[720px] pb-3 bg-white rounded m-2 overflow-hidden shadow">
+    <div class="relative">
+      <div class= "absolute top-2 right-2 flex justify-center items-center rounded-full px-2 py-2 bg-[#ffffff]">
+        <%= button_tag data: { action: "turbo-modal#hideModal" }, type: "button" do %>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <% end %>
+      </div>
+      <%= cl_image_tag(@story.cloudinary_key, class: "w-full h-[450px] object-cover")%>
+    </div>
+    <div class="p-[16px]">
+      <div class=" h-[175px] overflow-hidden">
+        <div class="text-center text-[#333333] mb-3">
+          <p class="font-semibold text-[24px]"><%= @story.title %></p>
+        </div>
+        <div class="block font-light text-[#999999] text-[18px] ">
+          <p class=""><%= @story.description %></p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-2">
+        <button type="button" class="flex justify-center my-2 text-[#333333] bg-[#f4d944]/90 hover:bg-[#f4d944] font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+          Débloquer cette histoire en m'abonnant
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
