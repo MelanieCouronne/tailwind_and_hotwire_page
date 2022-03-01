@@ -1,0 +1,11 @@
+<div class="w-[260px] h-[308px] pb-3 bg-white rounded m-2 overflow-hidden shadow transition duration-300 hover:scale-102">
+  <%= cl_image_tag(story.cloudinary_key, class: "w-full h-[190px] object-cover")%>
+  <div class="p-[16px]">
+    <div class="text-center">
+      <p class="h-[48px] text-[#333333] font-semibold text-[16px]"><%= story.title %></p>
+    </div>
+    <div class="block font-light text-[#999999] text-[14px] ">
+      <p class="line-clamp-2"><%= story.description %></p>
+    </div>
+  </div>
+</div>
