@@ -23,7 +23,8 @@ default: &default
 
 development:
   <<: *default
-  database: plume_challenge_1_development
+  database: tailwind_and_hotwire_development
+  # database: plume_challenge_1_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +58,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: plume_challenge_1_test
+  database: tailwind_and_hotwire_test
+  # database: plume_challenge_1_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: plume_challenge_1_production
-  username: plume_challenge_1
-  password: <%= ENV["PLUME_CHALLENGE_1_DATABASE_PASSWORD"] %>
+  database: tailwind_and_hotwire_production
+  username: tailwind_and_hotwire
+  password: <%= ENV["TAILWOIND_AND_HOTWIRE_DATABASE_PASSWORD"] %>
