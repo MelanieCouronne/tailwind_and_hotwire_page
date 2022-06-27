@@ -6,6 +6,9 @@ It's a simple page ☝🏻, with a small database filled with seeds 🌱
 
 Buttons are deliberately not clickable 🚫 but cards are, and display a preview of a story (made with a Hotwire's modal) 👍🏻
 
+> http://www.tailwind-test.fun/
+
+
 ```bash
 📌 Features reminder
 - Rails 7 new assets pipeline
